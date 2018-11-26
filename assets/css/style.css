@@ -61,6 +61,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
 }
+h3 {
+    border-bottom: 1px dashed black;
+    margin-bottom: 14px;
+    padding-bottom: 7px;
+}
 p {
 	margin: 0;
 	line-height:1.8;
@@ -119,8 +124,8 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #d92cf9;
-    font-size: 20px;
+    color: #225c33;
+    font-size: 14px;
     font-weight: 600;
     padding: 33px 0px 57px;
     text-transform: uppercase;
@@ -139,7 +144,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #225c33;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -149,7 +154,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #225c33;}
 /*.nav li*/
 
 
@@ -163,7 +168,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #d92cf9;
+  background-color: #225c33;
 }
 /*.menu-ui-design*/
 
@@ -173,13 +178,22 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid #225c33;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{color: #225c33;}
 /*.navbar-toggle */
 
+
+@media (min-width: 768px){
+    .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
+        font-size: 20px;
+    }
+}
+@media (min-width: 992px){
+}
+@media (min-width: 1200px){}
 
 
 /*-------------------------------------
@@ -190,17 +204,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
+    background:url(../images/lindyinthesky_logo.png)no-repeat;
+    background-size: 90%;
     background-position: center;
-    height:890px;
+    height:840px;
 }
 .welcome-hero:before{
     position:absolute;
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(72, 89, 173, 0.65);
     width:100%;
     height:100%;
 }
@@ -208,18 +222,20 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.header-text-area*/
 .header-text h2 {
     color: #fff;
-    font-size: 54px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 1.5;
+    padding-top: 20px;
 }
-.header-text h2 span {color: #d92cf9;}
+.header-text h2 span {color: #225c33;}
 .header-text p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 30px 0 60px;
+    padding: 45px 0 0 0;
     letter-spacing: 1px;
 }
 .header-text a {
@@ -240,6 +256,53 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
 /*.header-text-area*/
+
+@media (min-width: 600px){
+    .header-text h2 {
+        padding-top: 70px;
+    }
+    .header-text p {
+        padding: 90px 0 0 0;
+    }
+}
+@media (min-width: 768px){
+    .welcome-hero {
+        background-size: 60%;
+        background-position: 50% 70%;
+    }
+    .header-text h2 {
+        font-size: 36px;
+        padding-top: 120px;
+    }
+
+    .header-text p {
+        padding: 60px 0 0 0;
+        font-size: 24px;
+    }
+}
+@media (min-width: 992px){
+    .header-text h2 {
+        font-size: 38px;
+        padding-top: 160px;
+    }
+
+    .header-text p {
+        font-size: 32px;
+    }
+
+    .welcome-hero {
+        background-size: 50%;
+        background-position: 50% 70%;
+    }
+}
+/*
+@media (min-width: 1200px){
+    .welcome-hero {
+        background-size: 45%;
+        background-position: 50% 80%;
+    }
+}
+*/
 
 /*-------------------------------------
         4.  About
@@ -271,7 +334,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(14,25,80,.30);
+    text-align: center;
+    margin: 30px auto;
+}
 .single-about-img:before {
     position:  absolute;
     content: " ";
@@ -279,11 +347,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     left:  0;
     width: 109%;
     height:  100%;
-    background: rgba(31,44,108,.3);
+    background: rgba(31,44,108,.1);
 }
 .single-about-img img {
     max-width: 500px;
-    height: 468px;
 }
 .about-list-icon{
     display: flex;
@@ -325,8 +392,115 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-img */
 
 /*-------------------------------------
-        5.  Education
+        5.  Teachers
 --------------------------------------*/
+
+.teachers {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+.teachers .container > p:first-child {
+    padding: 80px 0 28px;
+}
+
+.teachers .container .row > div {
+    margin: 28px 0;
+}
+
+@media (min-width: 992px) {
+    .teachers .container .row > div.coming-soon {
+        margin-left: 25%;
+    }
+}
+
+.teachers .teacher-intro {
+    min-height: 125px;
+}
+
+.passes {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+.passes .container {
+    padding-top: 80px;
+}
+
+.passes .panel {
+    padding: 20px 40px;
+}
+
+.passes .panel li {
+    margin-bottom: 12px;
+}
+
+.passes ol {
+    width: 70%;
+    margin: 40px auto;
+    font-size: 90%;
+}
+.passes ol li {
+    padding-bottom: 5px;
+}
+
+.levels {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+.levels .container {
+    padding-top: 80px;
+}
+
+
+.levels .container .row > div {
+    margin: 28px 0;
+}
+
+.register {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+.register .container {
+    padding-top: 80px;
+}
+
+.register .container h3 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.register .container p,
+.register .container ul {
+    width: 76%;
+    margin: 24px auto;
+}
+
+.register .container ul {
+    width: 60%;
+}
+
+.register ul li {
+    list-style-type: circle;
+    margin: 24px;
+}
+
+.terms h3:first-child {
+    padding-top: 80px;
+}
+
+.terms h3 {
+    border-bottom: none;
+    margin: 0 auto;
+    width: 76%;
+}
+
+.terms p {
+    width: 76%;
+    margin: 0 auto 2em;
+}
 
 .education {
     background:  #f9fbfd;
@@ -352,7 +526,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .timeline-horizontal-border i {
     font-size:  10px;
-    color: #d92cf9;
+    color: #225c33;
     margin-right:  5px;
 }
 span.single-timeline-horizontal {
@@ -480,7 +654,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .timeline-content span>i, .experience-time span>i {
-    color: #d92cf9;
+    color: #225c33;
     position: absolute;
     font-size: 10px;
     left: -14.5%;
@@ -565,11 +739,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     content: " ";
     width:100%;
     height: 100%;
-    background: #d92cf9;
-    background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
-    background: -webkit-linear-gradient(left, #d92cf9 0%,#b636ff 100%);
-    background: linear-gradient(to right, #d92cf9 0%,#b636ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92cf9', endColorstr='#b636ff',GradientType=1 );
+    background: #225c33;
+    background: -moz-linear-gradient(left, #225c33 0%, #b636ff 100%);
+    background: -webkit-linear-gradient(left, #225c33 0%,#b636ff 100%);
+    background: linear-gradient(to right, #225c33 0%,#b636ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225c33', endColorstr='#b636ff',GradientType=1 );
     -webkit-transform:scale(0);
     -moz-transform:scale(0);
     -ms-transform:scale(0);
@@ -690,8 +864,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 --------------------------------------*/
 .contact {
     background: #f9fbfd;
-    padding: 50px 0 100px;
+    margin-top: 56px;
+    padding: 28px 0;
+     text-align: center;
 }
+
 .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
@@ -818,9 +995,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-align: center;
     font-size: 20px;
     cursor: pointer;
-    color: #fff;
-    background:#b636ff;
-	border:1px solid #b636ff;
+    background:#fff;
+    color: #225c33;
+	border:1px solid #225c33;
 	border-radius:50%;
 	-webkit-transition: .5s; 
 	-moz-transition:.5s; 
@@ -830,9 +1007,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 	z-index: 2;
 }
 #scroll-Top  .return-to-top:hover {
-    background:#fff;
-    color: #b636ff;
-	border:1px solid #b636ff;
+    background:#225c33;
+    color: #fff;
+	border:1px solid #225c33;
 }
 
 #scroll-Top  .return-to-top i{
@@ -852,4 +1029,25 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+.embed-container {
+    position: relative;
+    margin-top: 24px;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /*========================Thank you=================
