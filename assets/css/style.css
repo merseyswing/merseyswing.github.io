@@ -107,7 +107,7 @@ html,body{
 --------------------------------------*/
 .top-area {
     position: relative;
-    z-index: 9999;
+    z-index: 1000;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
@@ -1049,5 +1049,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height: 100%;
 }
 
+.modal-body h3 {
+    margin: 28px 0 14px;
+}
 
 /*========================Thank you=================
