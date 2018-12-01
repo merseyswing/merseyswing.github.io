@@ -37,6 +37,8 @@
 		<!-- bootsnav -->
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
         <!--style.css-->
         <link rel="stylesheet" href="assets/css/style.css">
         
@@ -60,7 +62,31 @@
 
 		gtag('config', 'UA-130232666-1');
 		</script>
-    </head>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+		<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+					"background": "#efefef",
+					"text": "#404040"
+					},
+					"button": {
+					"background": "#8ec760",
+					"text": "#ffffff"
+					}
+				},
+				"content": {
+					"href": "#privacy"
+				},
+				elements: {
+					messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" data-toggle="modal" data-target="#privacy">{{link}}</a></span>'
+				}
+			})
+		});
+		</script>
+	</head>
 	
 	<body>
 		<!--[if lte IE 9]>

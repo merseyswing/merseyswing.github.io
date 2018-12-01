@@ -1073,4 +1073,8 @@ a.application-link:active {
     margin: 28px 0 14px;
 }
 
+.cc-window {
+    z-index: 999;
+}
+
 /*========================Thank you=================
