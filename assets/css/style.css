@@ -1077,4 +1077,18 @@ a.application-link:active {
     z-index: 999;
 }
 
+.maps iframe {
+    pointer-events: none;
+}
+
+.venue-info {
+    padding: 24px;
+}
+
+.venue-info > ul {
+    margin: 24px;
+}
+.venue-info > ul > li {
+    margin: 24px 0;
+}
 /*========================Thank you=================

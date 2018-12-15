@@ -123,5 +123,12 @@ $(document).ready(function(){
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
+		$('.maps').click(function () {
+			$('.maps iframe').css("pointer-events", "auto");
+		});
+		
+		$( ".maps" ).mouseleave(function() {
+		  $('.maps iframe').css("pointer-events", "none"); 
+		});
 });	
 	
