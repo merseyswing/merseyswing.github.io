@@ -409,6 +409,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #225c33;}
     margin: 28px 0;
 }
 
+.teachers .container .row > div.col-md-offset-3 {
+    margin-left: 25%;
+}
+
 @media (min-width: 992px) {
     .teachers .container .row > div.coming-soon {
         margin-left: 25%;
@@ -1094,5 +1098,9 @@ a.application-link:active {
 }
 .venue-info > ul > li {
     margin: 24px 0;
+}
+
+.sold-out {
+    text-decoration: line-through;
 }
 /*========================Thank you=================
