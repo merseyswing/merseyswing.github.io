@@ -423,6 +423,42 @@ nav.navbar.bootsnav .navbar-toggle i{color: #225c33;}
     min-height: 150px;
 }
 
+/*-------------------------------------
+        Bands
+--------------------------------------*/
+
+.bands {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+.bands .container > p:first-child {
+    padding: 80px 0 28px;
+}
+
+.bands .container .row > div {
+    margin: 28px 0;
+}
+
+.bands .container .row > div.col-md-offset-3 {
+    margin-left: 25%;
+}
+
+@media (min-width: 992px) {
+    .bands .container .row > div.coming-soon {
+        margin-left: 25%;
+    }
+}
+
+.bands p {
+    margin: 28px 0;
+}
+
+.venues {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
 .passes {
     padding: 50px 0 100px;
     border-top: 1px solid #e5ebf2;

@@ -116,15 +116,31 @@
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class="smooth-menu active"></li>
-			                    <li class="smooth-menu"><a href="#teachers">teachers</a></li>
+							<li class="smooth-menu active"></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who? <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="smooth-menu"><a href="#teachers">teachers</a></li>
+										<li class="smooth-menu"><a href="#bands">bands</a></li>
+									</ul>
+								</li>
 			                    <li class="smooth-menu"><a href="#venues">venues</a></li>
-			                    <!--li class="smooth-menu"><a href="#schedule">schedule</a></li-->
-			                    <li class="smooth-menu"><a href="#passes">passes</a></li>
-			                    <li class="smooth-menu"><a href="#levels">levels</a></li>
+								<!--li class="smooth-menu"><a href="#schedule">schedule</a></li-->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">passes/levels <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="smooth-menu"><a href="#passes">passes</a></li>
+										<li class="smooth-menu"><a href="#levels">levels</a></li>
+									</ul>
+								</li>
 			                    <li class="smooth-menu"><a href="#register">register</a></li>
-								<li class="smooth-menu"><a href="#terms">terms &amp; conditions</a></li>
-								<li><a href="#" data-toggle="modal" data-target="#privacy">privacy</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">privacy <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="smooth-menu"><a href="#terms">terms &amp; conditions</a></li>
+										<li class="smooth-menu"><a href="#" data-toggle="modal" data-target="#privacy">privacy</a></li>
+									</ul>
+								</li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -338,6 +354,35 @@
 			</div>
 		</section><!--/.teachers-->
 		<!-- teachers end -->
+
+		<!-- bands start -->
+		<section id="bands" class="bands">
+			<div class="section-heading text-center">
+				<h2>Bands</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="band-info col-md-6">
+						<h3>Martin Nelson and the Rhythm Remedies</h3>
+						<p class="band-intro">
+							Martyn starting playing music from a very young age. Once he discovered Lindy hop he couldn’t wait to learn how to play swing music. Hearing the vintage swing music and being able to dance to it ignited Martyn’s passion for everything that breathes the authentic ‘swing era’.
+						</p>
+						<p>
+								Martyn searched out the best Jazz musicians he could find and formed the Rhythm Remedies.
+						</p>
+						<img src="assets/images/martynnelson.jpg" alt="Martin Nelson and the Rhythm Remedies">
+					</div>
+					<div class="band-info col-md-6">
+						<h3>The Jim Wynn Swingtet</h3>
+						<p class="band-intro">
+							You have danced with this band at our Winter Ball. They are back, by popular demand - The Jim Wynn Swingtet!!!
+						</p>
+						<img src="http://www.jimwynnswing.co.uk/wp-content/uploads/2015/02/25487157_1743120362385002_6462474328452394454_o-1024x1024.jpg" alt="Martin Nelson and the Rhythm Remedies">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- bands end -->
 
 		<!-- venues start -->
 		<section id="venues" class="venues">
