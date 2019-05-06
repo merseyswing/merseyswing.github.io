@@ -1139,4 +1139,33 @@ a.application-link:active {
 .sold-out {
     text-decoration: line-through;
 }
+
+.ringo {
+    background-color: red;
+    color: white;
+}
+
+.george {
+    background-color: yellow;
+}
+
+.paul {
+    background-color: green;
+    color: white;
+}
+
+.john {
+    background-color: blue;
+    color: white;
+}
+
+.taster {
+    background-color: #b4a7d6;
+}
+
+.social {
+    background-color: #00ffff;
+}
+
 /*========================Thank you=================
+
