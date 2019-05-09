@@ -506,6 +506,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #225c33;}
 
 .register .container {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .register .container h3 {
@@ -1165,6 +1166,11 @@ a.application-link:active {
 
 .social {
     background-color: #00ffff;
+}
+
+.schedule .text-center
+{
+    margin: 20px 0;
 }
 
 /*========================Thank you=================
